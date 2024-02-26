@@ -26,13 +26,14 @@ My research interests include:
 - LLM-enhanced motion reasoning and analysis.
 
 # 🔥 News
+- *2024.02*: &nbsp;🎉🎉 Three paper accepted to CVPR 2024. 
 - *2023.03*: &nbsp;🎉🎉 One paper accepted to CVPR 2023. 
 - *2022.11*: &nbsp;🎉🎉 Two paper accepted to AAAI 2023. 
 - *2022.06*: &nbsp;🎉🎉 One paper accepted to ACMMM 2022. 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2023</div><img src='images/hoim3.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='images/hoim3.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 HOI-M3: Capture Multiple Humans and Objects Interaction within Contextual
@@ -45,7 +46,7 @@ Environment
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2023</div><img src='images/imhoi.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='images/imhoi.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions](https://arxiv.org/pdf/2312.08869.pdf)
@@ -57,7 +58,7 @@ Chengfeng Zhao, **Juze Zhang**, Jiashen Du, Ziwei Shan, Junye Wang, Jingyi Yu, J
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2023</div><img src='images/both2hand.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='images/both2hand.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [BOTH2Hands: Inferring 3D Hands from Both Text Prompts and Body Dynamics](https://arxiv.org/pdf/2312.07937.pdf)
