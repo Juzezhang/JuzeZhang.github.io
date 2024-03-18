@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a PHD student at Chinese Academy of Sciences (ShanghaiTech) Visual & Data Intelligence Center(VDI Center), supervised by [Prof. Jingya Wang](https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/). I am also fortunate to work closely with [Prof. Jingyi Yu](http://www.yu-jingyi.com/) and [Prof. Lan Xu](https://www.xu-lan.com/). Also, I serve as the CEO co-founder of ElanTech Co., Ltd.
+I am currently a PHD student at Chinese Academy of Sciences (ShanghaiTech) Visual & Data Intelligence Center(VDI Center), supervised by [Prof. Jingya Wang](https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/). I am also fortunate to work closely with [Prof. Jingyi Yu](http://www.yu-jingyi.com/) and [Prof. Lan Xu](https://www.xu-lan.com/).
 
 My research interests include:
 
