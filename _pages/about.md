@@ -33,11 +33,10 @@ My research interests include:
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='images/hoim3.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024 Highlight</div><img src='images/hoim3.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-HOI-M3: Capture Multiple Humans and Objects Interaction within Contextual
-Environment
+[HOI-M3: Capture Multiple Humans and Objects Interaction within Contextual Environment](https://arxiv.org/pdf/2404.00299.pdf)
 
 **Juze Zhang**, Jingyan Zhang, Zining Song, Zhanhe Shi, Chengfeng Zhao, Jingyi Yu, Lan Xu, Jingya Wang
 
