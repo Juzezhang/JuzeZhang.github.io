@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a PHD student at Chinese Academy of Sciences (ShanghaiTech) Visual & Data Intelligence Center(VDI Center). I am fortunate to work closely with [Prof. Jingyi Yu](http://www.yu-jingyi.com/), [Prof. Jingya Wang](https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/) and [Prof. Lan Xu](https://www.xu-lan.com/).
+I am currently a PHD student at Chinese Academy of Sciences (ShanghaiTech) Visual & Data Intelligence Center(VDI Center). I am fortunate to work closely with [Prof. Jingyi Yu](http://www.yu-jingyi.com/), [Prof. Jingya Wang] and [Prof. Lan Xu](https://www.xu-lan.com/).
 
 My research interests include:
 
