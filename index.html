@@ -7,7 +7,9 @@
 
     <meta name="author" content="Jon Barron">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="images/favicon/favicon-256.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -22,10 +24,13 @@
                 <p class="name" style="text-align: center;">
                   Juze Zhang
                 </p>
-                <p>I'm currently a postdoc at <a href="https://stai.stanford.edu/">Stanford Translational AI Lab (STAI)</a> and <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab (SVL)</a> hosted by <a href="https://stanford.edu/~eadeli/">Prof. Ehsan Adeli</a>. I received my Ph.D. from the University of the Chinese Academy of Sciences (ShanghaiTech).
+                <p>I am currently a postdoc at Stanford University working with <a href="https://stanford.edu/~eadeli/">Prof. Ehsan Adeli</a>, affiliated with the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab (SVL)</a> and the <a href="https://stai.stanford.edu/">Stanford Translational AI Lab (STAI)</a>. Before joining Stanford, I worked on digital humans at ShanghaiTech University, where I was fortunate to work closely with <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>, <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Jingya Wang</a>, and <a href="https://www.xu-lan.com/">Lan Xu</a>. I received my Ph.D. from the University of Chinese Academy of Sciences.
                 </p>
                 <p>
-                  I am passionate about human-centric motion perception, interaction, and generation, with a focus on developing foundational agents capable of perceiving, understanding, and interacting with the 3D world.
+                  I consider myself a multidisciplinary researcher who enjoys building across the full stack &mdash; hardware, systems, algorithms, and frontier multimodal frameworks. On the systems side, I maintained a multi-view dome with over 100 cameras at ShanghaiTech, built the DailyCap Studio from scratch as the first student on the project, and assembled the HOI-X Studio (12 Z-CAM + 8 OptiTrack + RealSense). I also led a small team to design wireless IMUs from scratch, embedding them into objects, clothing, and even flexible PCBs worn on the face (see <a href="#projects">Projects</a>).
+                </p>
+                <p>
+                  On the algorithm side, my current research centers on multimodal alignment &mdash; in particular world/video models, speech LLMs, and the hardware stack for robotics. At Stanford, I built ViBES, an early exploration of the mixture-of-modality-experts (MoME) design &mdash; self-attention with modality-specific parameters and fractional embeddings on top of a speech LLM &mdash; which became a 3D conversational agent in early 2025. Encouraged by the success of this mixture-of-transformers (MoT) recipe, I then initiated OpenWAM, applying the same design to video generation in place of the speech LLM. I view this line of work as essentially sequential-transformer-to-sequential-transformer modeling.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:juze@stanford.edu">Email</a> &nbsp;/&nbsp;
@@ -35,7 +40,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/Headshot-Juze.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 0;" alt="profile photo" src="images/Headshot-Juze.jpg" class="hoverZoomLink"></a>
+                <a href="images/Headshot_2.jpg"><img style="width:100%;max-width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center center;border-radius:0;" alt="profile photo" src="images/Headshot_2.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -44,7 +49,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-<!--                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.-->
+                  Selected papers are listed below (* denotes equal contribution). For the full list, please see my <a href="https://scholar.google.com.hk/citations?user=qbovRUIAAAAJ&hl=zh-CN">Google Scholar</a>.
                 </p>
               </td>
             </tr>
@@ -52,10 +57,182 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <!--###### OpenWAM ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/openwam.png" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <a href="https://openwam.stanford.edu/">
+                <span class="papertitle">OpenWAM: An Open Framework for Generalist World-Action Modeling</span>
+              </a>
+              <br>
+              <strong>OpenWAM Team</strong>, Stanford University
+              <br>
+              <em>In submission</em>
+              <br>
+              <a href="">project page</a> /
+              <a href="">arXiv</a> /
+              <a href="https://openwam.stanford.edu/">blog</a> /
+              <a href="https://github.com/OpenWAM/OpenWAM">code</a>
+            </td>
+          </tr>
+
+          <!--###### Listen, Speak, and Move ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/lsm.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <span class="papertitle">Listen, Speak, and Move: A Full-Body Embodied Agent for Interactive Humanoids</span>
+              <br>
+              <strong>Juze Zhang*</strong>,
+              <a href="https://heng14.github.io/">Heng Yu*</a>,
+              <a href="">David D. Yuan</a>,
+              <a href="https://scholar.google.com/citations?user=AcwM5lIAAAAJ&hl=en">Ali Sartaz Khan</a>,
+              <a href="">Nihar Mudigonda</a>,
+              <a href="https://zhaoyue-zephyrus.github.io/">Yue Zhao</a>,
+              <a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a>,
+              <br>
+              <em>In submission</em>
+              <br>
+              <a href="">project page</a> /
+              <a href="">arXiv</a> /
+              <a href="">code</a>
+            </td>
+          </tr>
+
+          <!--###### ViBES ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/vibes.gif" style="width:100%; max-width:100%; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <a href="https://ai.stanford.edu/~juze/ViBES/">
+                <span class="papertitle">ViBES: A Conversational Agent with Behaviorally-Intelligent 3D Virtual Body</span>
+              </a>
+              <br>
+              <strong>Juze Zhang</strong>,
+              <a href="https://changan.io/">Changan Chen</a>,
+              <a href="https://chenxin.tech/">Xin Chen</a>,
+              <a href="https://heng14.github.io/">Heng Yu</a>,
+              <a href="https://ai.stanford.edu/~xtiange/">Tiange Xiang</a>,
+              <a href="https://scholar.google.com/citations?user=AcwM5lIAAAAJ&hl=en">Ali Sartaz Khan</a>,
+              <a href="https://scholar.google.com.hk/citations?user=UjpM6IAAAAAJ&hl=zh-CN&oi=ao">Shrinidhi Kowshika Lakshmikanth</a>,
+              <a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a>,
+              <br>
+              <em>CVPR</em>, 2026
+              <br>
+              <a href="https://ai.stanford.edu/~juze/ViBES/">project page</a> /
+              <a href="https://arxiv.org/abs/2512.14234">arXiv</a> /
+              <a href="https://github.com/Juzezhang/ViBES">code</a> /
+              <a href="https://huggingface.co/datasets/JuzeZhang/Converse3D">dataset</a>
+            </td>
+          </tr>
+
+          <!--###### Video Preference Score ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/vps.png" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <span class="papertitle">Recreating Video Arenas via Automated Preference Scoring</span>
+              <br>
+              <a href="https://zhaoyue-zephyrus.github.io/">Yue Zhao</a>,
+              <a href="">Aniket Gupta</a>,
+              <strong>Juze Zhang</strong>,
+              <a href="https://ai.stanford.edu/~xtiange/">Tiange Xiang</a>,
+              <a href="">Ryan Rong</a>,
+              <a href="">Xuan Su</a>,
+              <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>,
+              <a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a>,
+              <br>
+              <em>In submission</em>
+              <br>
+              <a href="">project page</a> /
+              <a href="">arXiv</a> /
+              <a href="">code</a>
+            </td>
+          </tr>
+
+          <!--###### Think Before Watching ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/tbw.png" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <span class="papertitle">Think Before Watching: Planning to Select Frames for Video Understanding</span>
+              <br>
+              <a href="https://heng14.github.io/">Heng Yu</a>,
+              <a href="https://zhaoyue-zephyrus.github.io/">Yue Zhao</a>,
+              <a href="">Mohammad H. Abbasi</a>,
+              <strong>Juze Zhang</strong>,
+              <a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a>,
+              <br>
+              <em>In submission</em>
+              <br>
+              <a href="">project page</a> /
+              <a href="">arXiv</a> /
+              <a href="">code</a>
+            </td>
+          </tr>
+
+          <!--###### SocialGen ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/socialgen.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <a href="https://socialgenx.github.io/">
+                <span class="papertitle">SocialGen: Modeling Multi-Human Social Interaction with Language Models</span>
+              </a>
+              <br>
+              <a href="https://heng14.github.io/">Heng Yu*</a>,
+              <strong>Juze Zhang*</strong>,
+              <a href="https://changan.io/">Changan Chen</a>,
+              <a href="https://ai.stanford.edu/~xtiange/">Tiange Xiang</a>,
+              <a href="#">Yusu Fang</a>,
+              <a href="https://www.niebles.net/">Juan Carlos Niebles</a>,
+              <a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a>,
+              <br>
+              <em>3DV</em>, 2026
+              <br>
+              <a href="https://socialgenx.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2503.22906">arXiv</a>
+            </td>
+          </tr>
+
+          <!--###### D-RoPE ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/drope.png" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <a href="https://arxiv.org/abs/2603.25977">
+                <span class="papertitle">Diffusion MRI Transformer with a Diffusion Space Rotary Positional Embedding (D-RoPE)</span>
+              </a>
+              <br>
+              <a href="https://profiles.stanford.edu/gustavo-chau">Gustavo Chau Loo Kung</a>,
+              <a href="">Mohammad Abbasi</a>,
+              <a href="">Camila Blank</a>,
+              <strong>Juze Zhang</strong>,
+              <a href="https://alanqrwang.github.io/">Alan Q. Wang</a>,
+              <a href="https://sophieostmeier.github.io/">Sophie Ostmeier</a>,
+              <a href="https://profiles.stanford.edu/akshay-chaudhari">Akshay Chaudhari</a>,
+              <a href="https://profiles.stanford.edu/kilian-pohl">Kilian Pohl</a>,
+              <a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a>,
+              <br>
+              <em>CVPR</em>, 2026
+              <br>
+              <a href="https://arxiv.org/abs/2603.25977">arXiv</a> /
+              <a href="https://github.com/gustavochau/D-RoPE">code</a>
+            </td>
+          </tr>
+
           <!--###### Language of Motion ####-->
           <tr>
             <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
-              <img src="images/lom.png" style="width:100%; max-width:160px; height:auto; display:block; margin:auto;">
+              <img src="images/lom.png" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
             </td>
             <td style="padding:16px; width:70%; vertical-align:middle;">
               <a href="https://languageofmotion.github.io/">
@@ -69,7 +246,7 @@
               <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>,
               <a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a>,
               <br>
-              <em>arXiv</em>, 2024
+              <em>CVPR</em>, 2025
               <br>
               <a href="https://languageofmotion.github.io/">project page</a> /
               <a href="https://arxiv.org/pdf/2412.10523">arXiv</a>
@@ -77,11 +254,91 @@
           </tr>
 
 
+          <!--###### SCRIPT ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/script.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <a href="https://zhanglele12138.github.io/SCRIPT/">
+                <span class="papertitle">SCRIPT: Scalable Diffusion Policy with Multi-stage Training for Language-driven Physics-Based Humanoid Control</span>
+              </a>
+              <br>
+              <a href="https://zhanglele12138.github.io/">Jingyan Zhang</a>,
+              <a href="">Han Liang</a>,
+              <a href="">Ruichi Zhang</a>,
+              <a href="">Bin Li</a>,
+              <strong>Juze Zhang</strong>,
+              <a href="https://chenxin.tech/">Xin Chen</a>,
+              <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Jingya Wang</a>,
+              <a href="https://www.xu-lan.com/">Lan Xu</a>,
+              <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>,
+              <br>
+              <em>arXiv</em>, 2026
+              <br>
+              <a href="https://zhanglele12138.github.io/SCRIPT/">project page</a> /
+              <a href="https://arxiv.org/abs/2605.22894">arXiv</a>
+            </td>
+          </tr>
+
+          <!--###### MIND ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/mind.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <a href="https://binlee26.github.io/MIND_page/">
+                <span class="papertitle">MIND: Multi-Scale Intent Diffusion for Text-Driven Physics-Based Humanoid Control</span>
+              </a>
+              <br>
+              <a href="">Bin Li*</a>,
+              <a href="">Ruichi Zhang*</a>,
+              <a href="">Han Liang</a>,
+              <a href="https://zhanglele12138.github.io/">Jingyan Zhang</a>,
+              <strong>Juze Zhang</strong>,
+              <a href="https://chenxin.tech/">Xin Chen</a>,
+              <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Jingya Wang</a>,
+              <br>
+              <em>arXiv</em>, 2026
+              <br>
+              <a href="https://binlee26.github.io/MIND_page/">project page</a> /
+              <a href="https://arxiv.org/abs/2605.26006">arXiv</a>
+            </td>
+          </tr>
+
+          <!--###### InterAgent ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/interagent.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <a href="https://binlee26.github.io/InterAgent-Page/">
+                <span class="papertitle">InterAgent: Physics-based Multi-agent Command Execution via Diffusion on Interaction Graphs</span>
+              </a>
+              <br>
+              <a href="">Bin Li*</a>,
+              <a href="">Ruichi Zhang*</a>,
+              <a href="">Han Liang</a>,
+              <a href="https://zhanglele12138.github.io/">Jingyan Zhang</a>,
+              <strong>Juze Zhang</strong>,
+              <a href="https://chenxin.tech/">Xin Chen</a>,
+              <a href="https://www.xu-lan.com/">Lan Xu</a>,
+              <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>,
+              <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Jingya Wang</a>,
+              <br>
+              <em>arXiv</em>, 2025
+              <br>
+              <a href="https://binlee26.github.io/InterAgent-Page/">project page</a> /
+              <a href="https://arxiv.org/abs/2512.07410">arXiv</a> /
+              <a href="https://github.com/BinLee26/InterAgent">code</a>
+            </td>
+          </tr>
+
           <!--###### HOIM3 ####-->
 
           <tr>
             <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
-              <img src="images/hoim3.gif" style="width:100%; max-width:160px; height:auto; display:block; margin:auto;">
+              <img src="images/hoim3.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
             </td>
             <td style="padding:16px; width:70%; vertical-align:middle;">
               <a href="https://juzezhang.github.io/HOIM3_ProjectPage/">
@@ -100,8 +357,8 @@
               <br>
               <em>CVPR</em>, 2024, Highlight
               <br>
-              <a href="https://languageofmotion.github.io/">project page</a> /
-              <a href="https://arxiv.org/pdf/2412.10523">arXiv</a> /
+              <a href="https://juzezhang.github.io/HOIM3_ProjectPage/">project page</a> /
+              <a href="https://arxiv.org/abs/2404.00299">arXiv</a> /
               <a href="https://github.com/Juzezhang/NeuralDome_Toolbox">code</a> /
               <a href="https://drive.google.com/drive/u/1/folders/1bT7J0XnbUx5goixgJRWJxpycOFffpwOc">dataset</a>
             </td>
@@ -110,7 +367,7 @@
           <!--###### I'm HOI ####-->
           <tr>
             <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
-              <img src="images/imhoi.gif" style="width:100%; max-width:160px; height:auto; display:block; margin:auto;">
+              <img src="images/imhoi.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
             </td>
             <td style="padding:16px; width:70%; vertical-align:middle;">
               <a href="https://afterjourney00.github.io/IM-HOI.github.io/">
@@ -140,7 +397,7 @@
           <!--###### Both2hand ####-->
           <tr>
             <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
-              <img src="images/both2hand.gif" style="width:100%; max-width:160px; height:auto; display:block; margin:auto;">
+              <img src="images/both2hand.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
             </td>
             <td style="padding:16px; width:70%; vertical-align:middle;">
               <a href="https://godheritage.github.io/BOTH2Hands/">
@@ -167,7 +424,7 @@
           <!--###### Neuraldome ####-->
           <tr>
             <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
-              <img src="images/neuraldome.gif" style="width:100%; max-width:160px; height:auto; display:block; margin:auto;">
+              <img src="images/neuraldome.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
             </td>
             <td style="padding:16px; width:70%; vertical-align:middle;">
               <a href="https://juzezhang.github.io/NeuralDome/">
@@ -197,7 +454,7 @@
           <!--###### IKOL ####-->
           <tr>
             <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
-              <img src="images/IKOL.png" style="width:100%; max-width:160px; height:auto; display:block; margin:auto;">
+              <img src="images/IKOL.png" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
             </td>
             <td style="padding:16px; width:70%; vertical-align:middle;">
               <a href="https://juzezhang.github.io/IKOL-webpage/">
@@ -220,53 +477,78 @@
             </td>
           </tr>
 
-          <!--###### fusionpose ####-->
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2 id="projects">Projects</h2>
+                <p>
+                  Beyond papers, I love building the full stack with my hands &mdash; capture studios, sensors, and the systems that power the datasets above.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <!--###### Project: DailyCap Studio ####-->
           <tr>
             <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
-              <img src="images/fusionpose.jpeg" style="width:100%; max-width:160px; height:auto; display:block; margin:auto;">
+              <img src="images/dailycap.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
             </td>
             <td style="padding:16px; width:70%; vertical-align:middle;">
-              <a href="https://arxiv.org/pdf/2211.16951">
-                <span class="papertitle">Weakly Supervised 3D Multi-person Pose Estimation for Large-scale Scenes based on Monocular Camera and Single LiDAR</span>
-              </a>
+              <span class="papertitle">DailyCap Studio: Built from Scratch</span>
               <br>
-              <a href="https://coralemon.github.io/">Peishan Cong</a>,
-              <a href="https://scholar.google.com/citations?user=29Gs2nQAAAAJ&hl=zh-CN">Yiteng Xu</a>,
-              <a href="https://ren-ym.github.io/">Yiming Ren</a>,
-              <strong>Juze Zhang</strong>,
-              <a href="https://www.xu-lan.com/">Lan Xu</a>,
-              <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Jingya Wang</a>,
-              <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>,
-              <a href="https://yuexinma.me/">Yuexin Ma</a>,
-              <br>
-              <em>AAAI</em>, 2023, oral
-              <br>
-              <a href="">project page</a> /
-              <a href="https://arxiv.org/pdf/2211.16951">arXiv</a> /
+              A multi-view capture studio (42 Z-CAM + 16 OptiTrack) at ShanghaiTech that I built from scratch as the first student on the project &mdash; from frame design and camera layout to synchronization, calibration, and the full capture pipeline.
             </td>
           </tr>
 
-
-          <!--###### MAR ####-->
+          <!--###### Project: HOI-X Studio ####-->
           <tr>
             <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
-              <img src="images/mar.jpeg" style="width:100%; max-width:160px; height:auto; display:block; margin:auto;">
+              <img src="images/hoix.png" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
             </td>
             <td style="padding:16px; width:70%; vertical-align:middle;">
-              <a href="https://arxiv.org/pdf/2207.07900">
-                <span class="papertitle">Mutual Adaptive Reasoning for Monocular 3D Multi-Person Pose Estimations</span>
-              </a>
+              <span class="papertitle">HOI-X Studio</span>
               <br>
-              <strong>Juze Zhang</strong>,
-              <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Jingya Wang</a>,
-              <a href="https://shiye21.github.io/">Ye Shi</a>,
-              <a href="http://www.hislab.cn/">Fei Gao</a>,
-              <a href="https://www.xu-lan.com/">Lan Xu</a>,
-              <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>,
+              A hybrid interaction-capture rig combining side-view sensing (12 Z-CAM E2 + 8 OptiTrack) with egocentric sensing (Pupil Core eye tracker + RealSense D455) for fine-grained human-object interaction capture.
+            </td>
+          </tr>
+
+          <!--###### Project: ShanghaiTech Dome ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/neuraldome_studio.png" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <span class="papertitle">NeuralDome Studio: 76 Z-CAM + 16 Vicon</span>
               <br>
-              <em>ACMMM</em>, 2022
+              I maintained and operated the ShanghaiTech multi-view dome with over 100 cameras, powering large-scale human-object interaction datasets including <a href="https://juzezhang.github.io/NeuralDome/">NeuralDome</a> (CVPR 2023) and <a href="https://juzezhang.github.io/HOIM3_ProjectPage/">HOI-M3</a> (CVPR 2024).
+            </td>
+          </tr>
+
+          <!--###### Project: Franka FR3 Platform ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/fr3.jpg" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <span class="papertitle">Franka FR3 Robot Arm Platform</span>
               <br>
-              <a href="https://arxiv.org/pdf/2211.16951">arXiv</a> /
+              I built a Franka FR3 manipulation platform from scratch in the lab at Stanford &mdash; fabricating the mobile stand from raw aluminum extrusions, assembling and calibrating the arm, and setting up the gripper, wrist-mounted camera, and control stack.
+            </td>
+          </tr>
+
+          <!--###### Project: Custom IMU ####-->
+          <tr>
+            <td style="padding:16px; width:30%; vertical-align:middle; text-align:center;">
+              <img src="images/imu.gif" style="width:100%; max-width:200px; height:auto; display:block; margin:auto;">
+            </td>
+            <td style="padding:16px; width:70%; vertical-align:middle;">
+              <span class="papertitle">Wireless IMU Sensors Designed from Scratch</span>
+              <br>
+              I led a small team to design custom wireless IMUs (ESP32/Nordic + 9-axis sensing over Bluetooth/Wi-Fi), embedded into objects and clothing &mdash; including a flexible-PCB version thin enough to be worn directly on the face for facial capture.
             </td>
           </tr>
 
